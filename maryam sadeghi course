@@ -1,0 +1,43 @@
+import numpy as np
+import cv2 as cv
+import matplotlib.pyplot as plt
+
+
+#load image
+#argoment2 : siah sefid : cv.IMREAD_GRAYSCALE or 0,  rangi : cv.IMREAD_COLOR or 1
+img = cv.imread("c:/Users/caspian1/Pictures/WhatsApp Image 2022-02-05 at 10.24.10 PM.jpeg", cv.IMREAD_GRAYSCALE)
+imgcolor = cv.imread("c:/Users/caspian1/Pictures/WhatsApp Image 2022-02-05 at 10.24.10 PM.jpeg", cv.IMREAD_COLOR)
+
+
+#cv.IMREAD_GRAYSCALE    0
+#cv.IMREAD_COLOR        1
+#cv.IMREAD_UNCHANGED    -1
+
+'''namayesh tasvir
+arg1 = onvani ke dar bala namayesh mide
+arg2 : variable ke aks ro toosh zakhire kardi
+'''
+
+cv.imshow('IMAGE display', imgcolor)
+
+cv.imshow('IMAGE display', img)
+''' این کد برای اینه که به پایتون بگه منتظر دکمه باش تا صفحه رو ببندی
+وقتی صفر بزاری هر دکمه ای بزنی بسته میشه
+'''
+cv.waitKey(0)
+
+#همه پنجره های باز رو ببند
+cv.destroyAllWindows()
+
+cv.imshow('IMAGE display', imgcolor)
+cv.waitKey(0)
+
+#همه پنجره های باز رو 
+cv.destroyAllWindows()
+"""
+cv.imshow('IMAGE display', image)
+cv.waitKey(0)
+cv.destroyAllWindows()
+"""
+
+
